@@ -1,0 +1,247 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+/* 
+скидання яке було на Go It, але у мене і так всі відступи були 0
+h1,
+h2,
+h3,
+p {
+margine-top: 0; 
+margine-bottom: 0; 
+}
+ul,
+ol {
+margine-top: 0; 
+margine-bottom: 0; 
+padding-left: 0;
+}
+*/
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* нічого не помінялося з address */
+.address {
+  font-style: normal;
+}
+/* ----------------------Heade------------------------ */
+
+/* line-height/font-size=line-height */
+.logotype {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.menu-link {
+  color: #212121;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #2196f3;
+}
+
+.header-contact-number {
+  color: #757575;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.header-contact-number:hover,
+.header-contact-number:focus {
+  color: #2196f3;
+}
+
+.header-contact-link {
+  color: #757575;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: #2196f3;
+}
+/* --------------------------/HEADER---------------------- */
+
+/* --------------------------HERO-------------------------- */
+.hero-title {
+  /* color: #fff; */
+
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+
+/* купа всього, і в результаті кнопка стрьомна */
+.hero-button {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #2196f3;
+  color: #fff;
+}
+/* --------------------------/HERO------------------------- */
+
+/* --------------------------ABOUT US---------------------- */
+.about-title {
+  color: #212121;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  color: #757575;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+/* -------------------------/ABOUT US---------------------- */
+
+/* ------------------------SERVICES------------------------ */
+
+.services-title {
+  color: #212121;
+
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+/* -----------------------/SERVICES------------------------ */
+
+/* ----------------------- OUR TEAM-------------------------- */
+
+.team-title {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+.team-name {
+  color: #212121;
+
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.team-position {
+  color: #757575;
+
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+/* ------------------------/ OUR TEAM------------------------ */
+
+/* -------------------------FOOTER-------------------------- */
+.footer-logo {
+  /* color: #fff; */
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.footer-contact-link {
+  /* color: #fff; */
+
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+
+/* -------------------------/FOTER--------------------------- */
