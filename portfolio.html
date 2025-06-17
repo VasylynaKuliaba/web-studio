@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/container.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="nav">
+        <a class="logotype" href="./index.html">WebStudio</a>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="">Studio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href=""> Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-contacts">
+        <li class="header-contact-item">
+          <a class="header-contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="header-contact-item">
+          <a class="header-contact-number" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main class="portfolio">
+      <section class="portfolio-filters">
+        <ul class="portfolio-filter-list">
+          <li class="portfolio-filter-item">
+            <a class="portfolio-filter-link" href="">All</a>
+          </li>
+          <li class="portfolio-filter-item">
+            <a class="portfolio-filter-link" href="">Websites</a>
+          </li>
+          <li class="portfolio-filter-item">
+            <a class="portfolio-filter-link" href="">Applications</a>
+          </li>
+          <li class="portfolio-filter-item">
+            <a class="portfolio-filter-link" href="">Design</a>
+          </li>
+          <li class="portfolio-filter-item">
+            <a class="portfolio-filter-link" href="">Marketing</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="portfolio-projects">
+        <div class="container">
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/technocracker.jpg"
+                alt="technocracker"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">Technocracker</h3>
+                <p class="portfolio-category">Website</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/poster.jpg"
+                alt="New Orleans vs Golden Star poster"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">
+                  New Orleans vs Golden Star poster
+                </h3>
+                <p class="portfolio-category">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/seafood.jpg"
+                alt="Seafood restaurant"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">Seafood restaurant</h3>
+                <p class="portfolio-category">Application</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/project-prime.jpg"
+                alt="Project Prime"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">Project Prime</h3>
+                <p class="portfolio-category">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/the-boxes-project.jpg"
+                alt="Project Boxes"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">Project Boxes</h3>
+                <p class="portfolio-category">Application</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/Inspiration.jpg"
+                alt="Inspiration has no Borders"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">Inspiration has no Borders</h3>
+                <p class="portfolio-category">Website</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/limited-edition.jpg"
+                alt="The Limited Edition"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">The Limited Edition</h3>
+                <p class="portfolio-category">Design</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/lab-project.jpg"
+                alt="LAB project"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">LAB project</h3>
+                <p class="portfolio-category">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <img
+                class="portfolio-image"
+                src="./img/portfolio/growing-business.jpg"
+                alt="Growing Business"
+              />
+              <div class="portfolio-background-wrapper">
+                <h3 class="portfolio-title">Growing Business</h3>
+                <p class="portfolio-category">Application</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="">WebStudio</a>
+        <address class="footer-address address">
+          <ul class="footer-contacts">
+            <li class="footer-contact-item">
+              <a
+                class="footer-contact-link"
+                target="_blank"
+                href="https://www.google.com/maps/search/%D0%BC.+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26/@50.4728778,30.4471645,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+                >м. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-contact-item">
+              <a
+                class="footer-contact-link footer-link-color"
+                href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="footer-contact-item">
+              <a
+                class="footer-contact-link footer-link-color"
+                href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

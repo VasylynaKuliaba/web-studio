@@ -1,71 +1,69 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   scroll-behavior: smooth;
 }
-
-/* 
-скидання яке було на Go It, але у мене і так всі відступи були 0
-h1,
-h2,
-h3,
-p {
-margine-top: 0; 
-margine-bottom: 0; 
-}
-ul,
-ol {
-margine-top: 0; 
-margine-bottom: 0; 
-padding-left: 0;
-}
-*/
 
 img {
   display: block;
   width: 100%;
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
+a {
   text-decoration: none;
 }
 
-/* нічого не помінялося з address */
 .address {
   font-style: normal;
 }
-/* ----------------------Heade------------------------ */
+/* ----------------------Header------------------------ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.menu {
+  display: flex;
+  gap: 50px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+}
 
+/* .menu-item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.nav {
+  display: flex;
+  gap: 93px;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 50px;
+}
 /* line-height/font-size=line-height */
 .logotype {
-  color: #000;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+
+  color: #000;
 }
 
 .menu-link {
-  color: #212121;
-
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+
+  color: #212121;
 }
 
 .menu-link:hover,
@@ -74,14 +72,14 @@ img {
 }
 
 .header-contact-number {
-  color: #757575;
-
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+
+  color: #757575;
 }
 
 .header-contact-number:hover,
@@ -90,14 +88,14 @@ img {
 }
 
 .header-contact-link {
-  color: #757575;
-
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+
+  color: #757575;
 }
 
 .header-contact-link:hover,
@@ -107,46 +105,77 @@ img {
 /* --------------------------/HEADER---------------------- */
 
 /* --------------------------HERO-------------------------- */
-.hero-title {
-  /* color: #fff; */
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 600px;
+
+  background-color: #2f303a;
+}
+
+.hero-title {
   text-align: center;
+
   font-family: "Roboto", sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 900;
-  line-height: 60px; /* 136.364% */
-  letter-spacing: 2.64px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: #fff;
 }
 
-/* купа всього, і в результаті кнопка стрьомна */
 .hero-button {
+  padding: 10px 32px;
+  margin-top: 30px;
   text-align: center;
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 187.5% */
+  line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
-  border-radius: 4px;
+
   color: #fff;
   background-color: #2196f3;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 300ms linear;
+
   cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #2196f3;
-  color: #fff;
+  background-color: #148df0;
 }
 /* --------------------------/HERO------------------------- */
 
 /* --------------------------ABOUT US---------------------- */
-.about-title {
-  color: #212121;
+.about {
+  display: flex;
+  padding-top: 94px;
+}
 
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-item {
+  max-width: 270px;
+}
+.about-title {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -154,94 +183,151 @@ img {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+
+  color: #212121;
 }
 
 .about-text {
-  color: #757575;
+  margin-top: 10px;
 
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
+
+  color: #757575;
 }
 /* -------------------------/ABOUT US---------------------- */
 
 /* ------------------------SERVICES------------------------ */
 
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
+}
 .services-title {
-  color: #212121;
-
   text-align: center;
+
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+
+  color: #212121;
 }
 
 /* -----------------------/SERVICES------------------------ */
 
 /* ----------------------- OUR TEAM-------------------------- */
 
+.team {
+  background-color: #f5f4fa;
+  padding: 94px 0;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.team-member {
+  width: 270px;
+}
 .team-title {
-  color: #212121;
-  font-family: "Roboto", sans-serif;
   text-align: center;
-  font-family: Roboto;
+
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+
+  color: #212121;
 }
 
 .team-name {
-  color: #212121;
-
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+
+  color: #212121;
+  background-color: white;
 }
 
 .team-position {
-  color: #757575;
-
+  padding-bottom: 30px;
   text-align: center;
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+
+  color: #757575;
+  background-color: white;
 }
 /* ------------------------/ OUR TEAM------------------------ */
 
 /* -------------------------FOOTER-------------------------- */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-section-information {
+  padding-top: 60px;
+  padding-left: 215px;
+}
+
 .footer-logo {
-  /* color: #fff; */
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+
+  color: #fff;
+}
+
+.footer-address {
+  padding-top: 10px;
+  padding-bottom: 60px;
 }
 .footer-contact-link {
-  /* color: #fff; */
-
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
+
+  color: #fff;
 }
 
-/* -------------------------/FOTER--------------------------- */
+.footer-link-color {
+  color: #ffffff99;
+}
+
+/* -------------------------/FOOTER--------------------------- */
